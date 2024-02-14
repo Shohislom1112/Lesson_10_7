@@ -1,0 +1,51 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": "23",
+      "group": "React N32",
+      "teacher": "Shohjahon Muhammadiyev",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "2",
+      "firstName": "Robert",
+      "lastName": "Kiosaki",
+      "age": 32,
+      "group": "React N45",
+      "teacher": "Bruce Wayne",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "3",
+      "firstName": "Cristiano",
+      "lastName": "Ronaldo",
+      "age": "38",
+      "group": "React N50",
+      "teacher": "Shohjahon Muhammadiyev",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "firstName": "Steve",
+      "lastName": "Jobs",
+      "age": 42
+    },
+    {
+      "id": "2",
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "age": 59
+    },
+    {
+      "id": "3",
+      "firstName": "Odil",
+      "lastName": "Ahmedov",
+      "age": 38
+    }
+  ]
+}
