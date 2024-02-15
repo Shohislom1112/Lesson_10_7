@@ -13,7 +13,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import { Actions, Loader, AddStudent, EditStudent } from './../components';
+import { ActionsSt, Loader, AddStudent, EditStudent } from './../components';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteStudent, fetchStudents } from './../app/student/studentSlice';
 
@@ -61,6 +61,7 @@ const Students = () => {
         }}
       >
         <Typography variant="h4">Students</Typography>
+        <input type="text" id='search' className='search' placeholder='Searching !!!' />
         <Button variant="contained" onClick={() => setOpenAdd(true)}>
           Add
         </Button>
@@ -117,7 +118,7 @@ const Students = () => {
                   <TableCell>{student.group}</TableCell>
                   <TableCell>{student.teacher}</TableCell>
                   <TableCell>
-                    <Actions
+                    <ActionsSt
                       handleEdit={handleEdit}
                       handleDelete={handleDelete}
                       studentId={student.id}

@@ -4,16 +4,19 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Stack } from '@mui/material';
 
-const Actions = ({ handleEdit, handleDelete, studentId }) => {
+const Actions = ({ handleEdit, handleDelete, teacherId }) => {
   return (
-    <Stack direction="row" spacing={3}>
-      <IconButton color="warning" onClick={() => handleEdit(studentId)}>
+    
+      <Stack direction="row" spacing={3}>
+      <IconButton color="warning" onClick={() => handleEdit(teacherId)}>
         <EditIcon />
       </IconButton>
-      <IconButton color="error" onClick={() => handleDelete(studentId)}>
+      <IconButton color="error" onClick={() => handleDelete(teacherId)}>
         <DeleteIcon />
       </IconButton>
     </Stack>
+ 
+    
   );
 };
 

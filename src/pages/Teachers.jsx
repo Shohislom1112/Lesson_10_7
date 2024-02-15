@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import "../styles/style.scss"
 import {
   Button,
   Paper,
@@ -13,7 +13,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import { Actions, Loader, AddTeacher, EditTeacher } from './../components';
+import { ActionsTch, Loader, AddTeacher, EditTeacher } from './../components';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteTeacher, fetchTeachers } from './../app/teacher/teacherSlice';
 
@@ -43,6 +43,7 @@ const Teachers = () => {
   };
 
   return (
+    <div className='teacher'>
     <div>
       {openAdd && <AddTeacher openAdd={openAdd} setOpenAdd={setOpenAdd} />}
       {openEdit && (
@@ -61,6 +62,7 @@ const Teachers = () => {
         }}
       >
         <Typography variant="h4">Teachers</Typography>
+        <input type="text" id='search' className='search' placeholder='Searching !!!' />
         <Button variant="contained" onClick={() => setOpenAdd(true)}>
           Add
         </Button>
@@ -87,6 +89,7 @@ const Teachers = () => {
                 <TableCell>Lastname</TableCell>
                 <TableCell>Age</TableCell>
                 <TableCell>Group</TableCell>
+                <TableCell>Level</TableCell>
                 
                 <TableCell>Actions</TableCell>
               </TableRow>
@@ -115,9 +118,9 @@ const Teachers = () => {
                   <TableCell>{teacher.lastName}</TableCell>
                   <TableCell>{teacher.age}</TableCell>
                   <TableCell>{teacher.group}</TableCell>
-                  <TableCell>{teacher.teacher}</TableCell>
+                  <TableCell>{teacher.level}</TableCell>
                   <TableCell>
-                    <Actions
+                    <ActionsTch
                       handleEdit={handleEdit}
                       handleDelete={handleDelete}
                       teacherId={teacher.id}
@@ -129,6 +132,7 @@ const Teachers = () => {
           </Table>
         </TableContainer>
       ) : null}
+    </div>
     </div>
   );
 };

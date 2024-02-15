@@ -6,3 +6,22 @@ a {
 .active > div {
   background-color: #ddd;
 }
+
+.search {
+  width: auto;
+  height: 30px;
+  padding: 5px;
+  transition: 0.8s;
+  
+    &:hover {
+    border-radius: 8px;
+    border-color: #ddd;
+    background-color: #0fff;
+  }
+  .input {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+  }
+}
