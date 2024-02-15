@@ -8,10 +8,11 @@ a {
 }
 
 .search {
-  width: auto;
+  width: 400px;
   height: 30px;
   padding: 5px;
   transition: 0.8s;
+  border-radius: 2px;
   
     &:hover {
     border-radius: 8px;
@@ -20,8 +21,18 @@ a {
   }
   .input {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     
+    }
+    .buttonnn {
+      transition: 0.8s;
+      &:hover {
+        border-radius: 8px;
+        background: black;
+        
+        color: red;
+
+      }
   }
 }

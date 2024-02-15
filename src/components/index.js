@@ -1,6 +1,9 @@
-import Actions from './ActionsSt';
+import ActionsSt from './ActionsSt';
+import ActionsTch from './ActionsTch';
 import Loader from './Loader';
 import AddStudent from './AddStudent';
 import EditStudent from './EditStudent';
+import AddTeacher from './AddTeacher';
+import EditTeacher from './EditTeacher';
 
-export { Actions, Loader, AddStudent, EditStudent };
+export { ActionsSt, ActionsTch, Loader, AddStudent, EditStudent, AddTeacher, EditTeacher  };
