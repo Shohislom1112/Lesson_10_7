@@ -42,5 +42,13 @@ export const mainListItems = (
         <ListItemText primary="Profile" />
       </ListItemButton>
     </NavLink>
+    <NavLink to="login">
+      <ListItemButton>
+        <ListItemIcon>
+        <p>Log In</p>
+        </ListItemIcon>
+        <ListItemText primary="" />
+      </ListItemButton>
+    </NavLink>
   </React.Fragment>
 );

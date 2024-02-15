@@ -2,7 +2,8 @@ import React from 'react';
 import "../styles/style.scss"
 
 const Login = () => {
-  return <div className='input'>
+  return <div className='inputtt'>
+    <br /><br />
     <input type="text" id='inputt'className='search' placeholder='Name'  /><br />
     <br /><input type="text " id='inputt' className='search' placeholder='LastName' />
  <br /><br />
