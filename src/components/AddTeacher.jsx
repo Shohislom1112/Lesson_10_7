@@ -190,14 +190,14 @@ const AddTeacher = ({ openAdd, setOpenAdd }) => {
           </Stack>
         </form>
       </DialogContent>
-      <DialogActionsTch>
+      <DialogActions>
         <Button onClick={handleClose} variant="outlined">
           Cancel
         </Button>
         <Button onClick={handleSubmit} variant="contained">
           Add
         </Button>
-      </DialogActionsTch>
+      </DialogActions>
     </Dialog>
   );
 };

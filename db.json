@@ -63,11 +63,20 @@
       "group": "React N45",
       "level": "Senior",
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "d3c9",
+      "firstName": "",
+      "lastName": "",
+      "age": "",
+      "group": "",
+      "level": "",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     }
   ],
   "teachers": [
     {
-      "id": "1",
+      "id": "",
       "firstName": "Samandar",
       "lastName": "Hasanov",
       "group": "React N32",
@@ -76,7 +85,7 @@
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     },
     {
-      "id": "2",
+      "id": "",
       "firstName": "Aziz",
       "lastName": "Nurmahamedov",
       "group": "React N45",
@@ -85,7 +94,7 @@
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     },
     {
-      "id": "3",
+      "id": "",
       "firstName": "Asil",
       "lastName": "Yo`",
       "group": "React N50",
