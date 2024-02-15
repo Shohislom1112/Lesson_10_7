@@ -26,6 +26,43 @@
       "group": "React N50",
       "teacher": "Shohjahon Muhammadiyev",
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "9927",
+      "firstName": "Shohislom",
+      "lastName": "Ravshanov",
+      "age": "15",
+      "group": "React N32",
+      "teacher": "",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "level": "Junior"
+    },
+    {
+      "id": "d7a8",
+      "firstName": "aaaa",
+      "lastName": "Shohislom",
+      "age": "55",
+      "group": "React N45",
+      "teacher": "Bruce Wayne",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "d979",
+      "firstName": "Shohislom",
+      "lastName": "Ravshanov ",
+      "age": "55",
+      "group": "React N45",
+      "level": "Junior",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    },
+    {
+      "id": "15ed",
+      "firstName": "a",
+      "lastName": "vsa",
+      "age": "55",
+      "group": "React N45",
+      "level": "Senior",
+      "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     }
   ],
   "teachers": [
@@ -33,8 +70,8 @@
       "id": "1",
       "firstName": "Samandar",
       "lastName": "Hasanov",
-      "group":  "React N32",
-      "level": "senior" ,
+      "group": "React N32",
+      "level": "senior",
       "age": "42",
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     },
@@ -42,17 +79,17 @@
       "id": "2",
       "firstName": "Aziz",
       "lastName": "Nurmahamedov",
-      "group":  "React N45",
-      "level": "junior" ,
+      "group": "React N45",
+      "level": "Middle",
       "age": "59",
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     },
     {
       "id": "3",
       "firstName": "Asil",
-      "lastName": "Yo`ldashev",
-      "group":"React N50",
-      "level": "middle" ,
+      "lastName": "Yo`",
+      "group": "React N50",
+      "level": "middle",
       "age": "38",
       "avatar": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
     }

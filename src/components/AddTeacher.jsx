@@ -17,7 +17,7 @@ import {
 import styled from '@emotion/styled';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { useDispatch } from 'react-redux';
-import { addStudent, fetchStudents } from '../app/student/studentSlice';
+import { addTeacher, fetchTeachers } from '../app/teacher/teacherSlice';
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -35,13 +35,13 @@ const VisuallyHiddenInput = styled('input')({
   width: 1,
 });
 
-const AddStudent = ({ openAdd, setOpenAdd }) => {
-  const [student, setStudent] = useState({
+const AddTeacher = ({ openAdd, setOpenAdd }) => {
+  const [teacher, setTeacher] = useState({
     firstName: '',
     lastName: '',
     age: '',
     group: '',
-    teacher: '',
+    level: '',
     avatar:
       'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
   });
@@ -54,10 +54,10 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addStudent(student));
+    dispatch(addTeacher(teacher));
     setOpenAdd(false);
-    setStudent({
-      ...student,
+    setTeacher({
+      ...teacher,
       firstName: '',
       lastName: '',
       age: '',
@@ -74,7 +74,7 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
       onClose={handleClose}
       aria-describedby="alert-dialog-slide-description"
     >
-      <DialogTitle>Add student</DialogTitle>
+      <DialogTitle>Add teacher</DialogTitle>
       <DialogContent>
         <form style={{ width: '400px' }}>
           <Stack sx={{ paddingBottom: '24px' }}>
@@ -83,10 +83,10 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
               variant="standard"
               id="firstName"
               name="firstName"
-              value={student.firstName}
+              value={teacher.firstName}
               onChange={(e) =>
-                setStudent({
-                  ...student,
+                setTeacher({
+                  ...teacher,
                   firstName: e.target.value,
                 })
               }
@@ -98,10 +98,10 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
               variant="standard"
               id="lastName"
               name="lastName"
-              value={student.lastName}
+              value={teacher.lastName}
               onChange={(e) =>
-                setStudent({
-                  ...student,
+                setTeacher({
+                  ...teacher,
                   lastName: e.target.value,
                 })
               }
@@ -113,10 +113,10 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
               variant="standard"
               id="age"
               name="age"
-              value={student.age}
+              value={teacher.age}
               onChange={(e) =>
-                setStudent({
-                  ...student,
+                setTeacher({
+                  ...teacher,
                   age: e.target.value,
                 })
               }
@@ -124,16 +124,16 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
           </Stack>
           <Stack sx={{ paddingBottom: '24px' }}>
             <FormControl fullWidth>
-              <InputLabel id="group">Group</InputLabel>
+              <InputLabel id="level">Group</InputLabel>
               <Select
                 labelId="group"
                 id="group"
                 name="group"
-                value={student.group}
+                value={teacher.group}
                 label="group"
                 onChange={(e) =>
-                  setStudent({
-                    ...student,
+                  setTeacher({
+                    ...teacher,
                     group: e.target.value,
                   })
                 }
@@ -152,11 +152,11 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
                 labelId="level"
                 id="level"
                 name="level"
-                value={student.level}
+                value={teacher.level}
                 label="level"
                 onChange={(e) =>
-                  setStudent({
-                    ...student,
+                  setTeacher({
+                    ...teacher,
                     level: e.target.value,
                   })
                 }
@@ -179,27 +179,27 @@ const AddStudent = ({ openAdd, setOpenAdd }) => {
                 id="avatar"
                 name="avatar"
                 onChange={(e) =>
-                  setStudent({
-                    ...student,
+                  setTeacher({
+                    ...teacher,
                     avatar: e.target.files && e.target.files[0],
                   })
                 }
               />
             </Button>
-            <div>{student.avatar && student.avatar.name}</div>
+            <div>{teacher.avatar && teacher.avatar.name}</div>
           </Stack>
         </form>
       </DialogContent>
-      <DialogActions>
+      <DialogActionsTch>
         <Button onClick={handleClose} variant="outlined">
           Cancel
         </Button>
         <Button onClick={handleSubmit} variant="contained">
           Add
         </Button>
-      </DialogActions>
+      </DialogActionsTch>
     </Dialog>
   );
 };
 
-export default AddStudent;
+export default AddTeacher;
