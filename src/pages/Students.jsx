@@ -21,6 +21,7 @@ const Students = () => {
   const [openAdd, setOpenAdd] = useState(false);
   const [openEdit, setOpenEdit] = useState(false);
   const [studentEdit, setStudentEdit] = useState({});
+  
 
   const { loading, students, error } = useSelector((state) => state.student);
   const dispatch = useDispatch();
@@ -61,7 +62,7 @@ const Students = () => {
         }}
       >
         <Typography variant="h4">Students</Typography>
-        <input type="text" id='search' className='search' placeholder='Searching !!!' />
+        <input type="text" id='search' className='search'  placeholder='Searching !!!' />
         <Button variant="contained" onClick={() => setOpenAdd(true)}>
           Add
         </Button>
